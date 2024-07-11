@@ -1,0 +1,11 @@
+G:\Development\C#\Converter\ConverterApp-master\Manager\bin\Debug\net8.0\Manager.deps.json
+G:\Development\C#\Converter\ConverterApp-master\Manager\bin\Debug\net8.0\Manager.dll
+G:\Development\C#\Converter\ConverterApp-master\Manager\bin\Debug\net8.0\Manager.pdb
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager.GeneratedMSBuildEditorConfig.editorconfig
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager.AssemblyInfoInputs.cache
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager.AssemblyInfo.cs
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager.csproj.CoreCompileInputs.cache
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager.dll
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\refint\Manager.dll
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager.pdb
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\ref\Manager.dll
