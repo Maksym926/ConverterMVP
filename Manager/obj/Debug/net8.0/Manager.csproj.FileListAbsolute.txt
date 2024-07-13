@@ -9,3 +9,4 @@ G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager
 G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\refint\Manager.dll
 G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager.pdb
 G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\ref\Manager.dll
+G:\Development\C#\Converter\ConverterApp-master\Manager\obj\Debug\net8.0\Manager.sourcelink.json

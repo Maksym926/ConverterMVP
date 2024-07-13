@@ -37,3 +37,4 @@ G:\Development\C#\Converter\ConverterApp-master\Converter\bin\Debug\net8.0-windo
 G:\Development\C#\Converter\ConverterApp-master\Converter\bin\Debug\net8.0-windows\Manager.pdb
 G:\Development\C#\Converter\ConverterApp-master\Converter\obj\Debug\net8.0-windows\Converter.csproj.AssemblyReference.cache
 G:\Development\C#\Converter\ConverterApp-master\Converter\obj\Debug\net8.0-windows\Converter.csproj.Up2Date
+G:\Development\C#\Converter\ConverterApp-master\Converter\obj\Debug\net8.0-windows\Converter.sourcelink.json
