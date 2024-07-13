@@ -18,43 +18,53 @@ namespace Manager
             this.view = view;
             view.SetPresenter(this);
         }
-
+        #region calc
         public void Calculate(string arg1, string arg2, string number) {
             if (arg1 == "Hexadecimal" && arg2 == "Decimal")
             {
-                model.HexadecimalToBinary1 = number;
+                model.HexadecimalToBinary1 = number; // Set 
                 string binary = model.HexadecimalToBinary1;
-                model.BinaryToDecimal1 = binary;
-
-                
-                UpdateForm(model.BinaryToDecimal1);
-                
+                model.BinaryToDecimal1 = binary; // Set 
+                UpdateForm(model.BinaryToDecimal1);               
             }
             if (arg1 == "Decimal" && arg2 == "Hexadecimal")
-            {
-                /*string res = model.DecimalToBinary(number, arg2);*/
-                /*UpdateForm(model.BinaryToHexaOctal(res, arg2));*/
+            {             
+                model.DecimalToBinary1 = number; // Set 
+                string binary = model.DecimalToBinary1;
+                model.BinaryToHexaOctal1 = binary; // Set 
+                UpdateForm(model.BinaryToHexaOctal1);
 
             }
             if (arg1 == "Octal" && arg2 == "Decimal")
             {
-                /*string res = model.OctalToBinary(number);*/ 
-                /*UpdateForm(model.BinaryToDecimal(res));*/
+                model.OctalToBinary1 = number; // Set
+                string binary = model.OctalToBinary1;
+                model.BinaryToDecimal1 = binary; // Set
+                UpdateForm(model.BinaryToDecimal1);
             }
             if (arg1 == "Decimal" && arg2 == "Octal")
             {
-                /*string res = model.DecimalToBinary(number, arg2);*/
-                /*UpdateForm(model.BinaryToHexaOctal(res, arg2));*/
+                model.DecimalToBinary1 = number; // Set
+                string binary = model.DecimalToBinary1;
+                model.BinaryToHexaOctal1 = binary; // Set
+                UpdateForm(model.BinaryToHexaOctal1);
+
             }
             if (arg1 == "Octal" && arg2 == "Hexadecimal")
             {
-                /*string res = model.OctalToBinary(number);*/
-                //Add Binary to Hexa
+                model.TextBox = arg2;
+                model.OctalToBinary1 = number; // Set
+                string binary = model.OctalToBinary1;
+                model.BinaryToHexaOctal1 = binary; // Set
+                UpdateForm(model.BinaryToHexaOctal1);
             }
             if (arg1 == "Hexadecimal" && arg2 == "Octal")
             {
-                /*string res = model.HexadecimalToBinary(number);*/
-                /*UpdateForm(model.BinaryToHexaOctal(res, arg2))*/;
+                model.TextBox = arg2;
+                model.HexadecimalToBinary1 = number; // Set
+                string binary = model.HexadecimalToBinary1;
+                model.BinaryToHexaOctal1 = binary; // Set
+                UpdateForm(model.BinaryToHexaOctal1);
             }
             if (arg1 == "Decimal" && arg2 == "Binary")
             {
@@ -64,14 +74,12 @@ namespace Manager
             if (arg1 == "Octal" && arg2 == "Binary")
             {
 
-                /*return DecimalOctalToBinary(number, TextBox1);*/
+               
                 model.OctalToBinary1 = number;
                 UpdateForm(model.OctalToBinary1);
             }
             if (arg1 == "Hexadecimal" && arg2 == "Binary")
-            {
-
-                /*return DecimalToBinaryOctalHexadecimal(number, TextBox1);*/
+            {              
                 model.HexadecimalToBinary1 = number;
                 UpdateForm(model.HexadecimalToBinary1);
             }
@@ -82,8 +90,9 @@ namespace Manager
             }
             if (arg1 == "Binary" && arg2 == "Hexadecimal")
             {
-
-                /*UpdateForm(model.BinaryToHexaOctal(number, arg2));*/
+                model.TextBox = arg2;
+                model.BinaryToHexaOctal1 = number;
+                UpdateForm(model.BinaryToHexaOctal1);
             }
             if (arg1== "Binary" && arg2 == "Octal")
             {
@@ -93,7 +102,7 @@ namespace Manager
             }
 
         }
-
+        #endregion
         public void UpdateForm(string result) { 
             view.GetResult(result);
         }
