@@ -146,6 +146,54 @@ namespace Manager
             }
         }
 
+        
+
+        public string BinaryTo2sComplement
+        {
+            get { return _number; }
+            set { _number = value;
+                bool IsMinus = false;
+                if (_number[0].ToString() == "1") { 
+                    IsMinus = true;
+                }
+                string newNum = "";
+                bool IsFound = false;
+                for (int i = _number.Length - 1; i > 0; i--) {
+                    if (IsFound)
+                    {
+                        if (_number[i].ToString() == "1")
+                        {
+                            newNum += "0";
+                        }
+                        else newNum += "1";
+                    }
+                    if (_number[i].ToString() == "0" && IsFound == false) {
+                        newNum += _number[i].ToString();
+                    }
+                    if (_number[i].ToString() == "1" && IsFound == false)
+                    {
+                        newNum += _number[i].ToString();
+                        IsFound = true;
+                    }
+                    
+                }
+                while (newNum.Length < 8) {
+                    if (IsMinus)
+                    {
+                        newNum += "1";
+                    }
+                    else {
+                        newNum += "0";
+                    }
+                }
+
+
+                _number = reversStr(newNum);
+
+
+            }
+        }
+
         public void numberIntConvert(string number, int[] halfBite, ref string newNum)
         {
             int numberInt = Int32.Parse(number);

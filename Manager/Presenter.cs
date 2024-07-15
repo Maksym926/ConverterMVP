@@ -100,6 +100,32 @@ namespace Manager
                 model.BinaryToHexaOctal1 = number;
                 UpdateForm(model.BinaryToHexaOctal1);
             }
+            if (arg1 == "Decimal" && arg2 == "2sComplement")
+            {
+                
+                int numInt = Convert.ToInt32(number);
+                string res = "";
+                if (numInt > 0)
+                {
+                    model.DecimalToBinary1 = number;
+                    string binary = model.DecimalToBinary1;
+                    binary = "0" + binary;
+                    UpdateForm(binary);
+                }
+                else {
+                    numInt = numInt * (-1);
+                    model.DecimalToBinary1 = numInt.ToString();
+                    string binary = model.DecimalToBinary1;
+                    binary = "1" + binary;
+                    model.BinaryTo2sComplement = binary;
+                    UpdateForm(model.BinaryTo2sComplement);
+                } 
+
+
+
+                
+            }
+
 
         }
         #endregion

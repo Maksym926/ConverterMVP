@@ -48,7 +48,7 @@
             // OutPut
             // 
             OutPut.FormattingEnabled = true;
-            OutPut.Items.AddRange(new object[] { "Binary", "Octal", "Decimal", "Hexadecimal" });
+            OutPut.Items.AddRange(new object[] { "Binary", "Octal", "Decimal", "Hexadecimal" , "2sComplement" });
             OutPut.Location = new Point(497, 55);
             OutPut.Name = "OutPut";
             OutPut.Size = new Size(151, 28);
