@@ -1,4 +1,8 @@
+﻿using DataBase1;   
 using Manager;
+using Microsoft.VisualBasic.Logging;
+using System.Net.Security;
+
 namespace Converter
 {
     public partial class Form1 : Form, IView
@@ -39,7 +43,20 @@ namespace Converter
 
         public void GetResult(string res)
         {
+
             resultLable.Text = res;
+        }
+
+        public void AddUserInfo(string result)
+        {
+           
+            using (DataBase1.ApplicationContext db = new DataBase1.ApplicationContext())
+            { 
+                User one = new User { output = "Hello"};
+                db.Users.Add(one);
+                db.SaveChanges();
+                
+            }
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
+
 namespace Manager
 {
     public class Presenter
@@ -157,7 +158,10 @@ namespace Manager
         }
         #endregion
         public void UpdateForm(string result) { 
+
+
             view.GetResult(result);
+            view.AddUserInfo(result);
         }
     }
 }
