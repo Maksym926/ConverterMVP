@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Manager
 {
@@ -130,6 +131,7 @@ namespace Manager
         {
             get { return _number; }
             set { _number = value;
+
                 double newnum = 0;
                 double y = 0;
                 for (int i = _number.Length - 1; i >= 0; i--)
@@ -143,12 +145,13 @@ namespace Manager
                 }
 
                 _number = newnum.ToString();
+
             }
         }
 
         
 
-        public string BinaryTo2sComplement
+        public string BinaryTo2sComplement_U
         {
             get { return _number; }
             set { _number = value;
@@ -163,16 +166,16 @@ namespace Manager
                     {
                         if (_number[i].ToString() == "1")
                         {
-                            newNum += "0";
+                            newNum = "0" + newNum;
                         }
-                        else newNum += "1";
+                        else newNum = "1" + newNum;
                     }
                     if (_number[i].ToString() == "0" && IsFound == false) {
-                        newNum += _number[i].ToString();
+                        newNum = _number[i].ToString() + newNum;
                     }
                     if (_number[i].ToString() == "1" && IsFound == false)
                     {
-                        newNum += _number[i].ToString();
+                        newNum = _number[i].ToString() + newNum;
                         IsFound = true;
                     }
                     
@@ -180,15 +183,55 @@ namespace Manager
                 while (newNum.Length < 8) {
                     if (IsMinus)
                     {
-                        newNum += "1";
+                        newNum = "1" + newNum;
                     }
                     else {
-                        newNum += "0";
+                        newNum = "0" + newNum;
                     }
                 }
 
 
                 _number = reversStr(newNum);
+
+
+            }
+        }
+
+        public string TwosComplementToBinary
+        {
+            get { return _number; }
+            set
+            {
+                _number = value;
+                
+                
+                string newNum = "";
+                bool IsFound = false;
+                for (int i = _number.Length - 1; i >= 0; i--)
+                {
+                    if (IsFound)
+                    {
+                        if (_number[i].ToString() == "1")
+                        {
+                            newNum = "0" + newNum;
+                        }
+                        else newNum = "1" + newNum;
+                    }
+                    if (_number[i].ToString() == "0" && IsFound == false)
+                    {
+                        newNum = _number[i].ToString() + newNum;
+                    }
+                    if (_number[i].ToString() == "1" && IsFound == false)
+                    {
+                        newNum = _number[i].ToString() + newNum;
+                        IsFound = true;
+                    }
+
+                }
+                
+
+
+                _number = newNum;
 
 
             }

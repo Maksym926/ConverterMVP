@@ -27,14 +27,14 @@ namespace Manager
                 model.BinaryToDecimal1 = binary; // Set 
                 UpdateForm(model.BinaryToDecimal1);               
             }
-            if (arg1 == "Decimal" && arg2 == "Hexadecimal")
-            {             
-                model.DecimalToBinary1 = number; // Set 
-                string binary = model.DecimalToBinary1;
-                model.BinaryToHexaOctal1 = binary; // Set 
-                UpdateForm(model.BinaryToHexaOctal1);
+                if (arg1 == "Decimal" && arg2 == "Hexadecimal")
+                {             
+                    model.DecimalToBinary1 = number; // Set 
+                    string binary = model.DecimalToBinary1;
+                    model.BinaryToHexaOctal1 = binary; // Set 
+                    UpdateForm(model.BinaryToHexaOctal1);
 
-            }
+                }
             if (arg1 == "Octal" && arg2 == "Decimal")
             {
                 model.OctalToBinary1 = number; // Set
@@ -117,13 +117,40 @@ namespace Manager
                     model.DecimalToBinary1 = numInt.ToString();
                     string binary = model.DecimalToBinary1;
                     binary = "1" + binary;
-                    model.BinaryTo2sComplement = binary;
-                    UpdateForm(model.BinaryTo2sComplement);
-                } 
+                    model.BinaryTo2sComplement_U = binary;
+                    UpdateForm(model.BinaryTo2sComplement_U);
+                }              
+            }
+            if (arg1 == "2sComplement" && arg2 == "Decimal")
+            {
 
 
 
                 
+
+                if (number[0].ToString() == "0")
+                {
+                    model.BinaryToDecimal1 = number;
+
+                    UpdateForm(model.BinaryToDecimal1);
+
+                }
+                else
+                {
+                    model.TwosComplementToBinary = number;
+                    string binary = model.TwosComplementToBinary;
+
+                    model.BinaryToDecimal1 = binary;
+                    int binaryInt = Convert.ToInt32(model.BinaryToDecimal1);
+                    binaryInt = binaryInt * (-1);
+                    UpdateForm(binaryInt.ToString());
+                    
+                }
+                /*model.TwosComplementToBinary = number;
+                string binary = model.TwosComplementToBinary;
+                model.BinaryToDecimal1 = binary;
+                UpdateForm(model.BinaryToDecimal1);*/
+               
             }
 
 
