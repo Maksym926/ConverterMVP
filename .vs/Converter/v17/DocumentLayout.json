@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "G:\\Development\\C#\\Converter\\ConverterApp-master\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|g:\\development\\c#\\converter\\converterapp-master\\converter\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|solutionrelative:converter\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|g:\\development\\c#\\converter\\converterapp-master\\converter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|solutionrelative:converter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,32 +15,24 @@
       "RelativeMoniker": "D:0:0:{1383522C-01F3-4CFF-87B5-CE7B07D89CC6}|DataBase1\\DataBase1.csproj|solutionrelative:database1\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E81A7326-72B1-458E-B42E-9D1381D956BC}|Manager\\Manager.csproj|g:\\development\\c#\\converter\\converterapp-master\\manager\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E81A7326-72B1-458E-B42E-9D1381D956BC}|Manager\\Manager.csproj|solutionrelative:manager\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1383522C-01F3-4CFF-87B5-CE7B07D89CC6}|DataBase1\\DataBase1.csproj|g:\\development\\c#\\converter\\converterapp-master\\database1\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1383522C-01F3-4CFF-87B5-CE7B07D89CC6}|DataBase1\\DataBase1.csproj|solutionrelative:database1\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|g:\\development\\c#\\converter\\converterapp-master\\converter\\converter.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|solutionrelative:converter\\converter.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E81A7326-72B1-458E-B42E-9D1381D956BC}|Manager\\Manager.csproj|g:\\development\\c#\\converter\\converterapp-master\\manager\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E81A7326-72B1-458E-B42E-9D1381D956BC}|Manager\\Manager.csproj|solutionrelative:manager\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|g:\\development\\c#\\converter\\converterapp-master\\converter\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|solutionrelative:converter\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|g:\\development\\c#\\converter\\converterapp-master\\converter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|solutionrelative:converter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|g:\\development\\c#\\converter\\converterapp-master\\converter\\converter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|solutionrelative:converter\\converter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E81A7326-72B1-458E-B42E-9D1381D956BC}|Manager\\Manager.csproj|g:\\development\\c#\\converter\\converterapp-master\\manager\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E81A7326-72B1-458E-B42E-9D1381D956BC}|Manager\\Manager.csproj|solutionrelative:manager\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|G:\\Development\\C#\\Converter\\ConverterApp-master\\converter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF4873D6-4D57-4A7E-A6F1-89554A548E88}|Converter\\Converter.csproj|solutionrelative:converter\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E81A7326-72B1-458E-B42E-9D1381D956BC}|Manager\\Manager.csproj|g:\\development\\c#\\converter\\converterapp-master\\manager\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E81A7326-72B1-458E-B42E-9D1381D956BC}|Manager\\Manager.csproj|solutionrelative:manager\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,122 +42,107 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\DataBase1\\User.cs",
-              "RelativeDocumentMoniker": "DataBase1\\User.cs",
-              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\DataBase1\\User.cs",
-              "RelativeToolTip": "DataBase1\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T15:52:58.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\DataBase1\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "DataBase1\\ApplicationContext.cs",
-              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\DataBase1\\ApplicationContext.cs",
-              "RelativeToolTip": "DataBase1\\ApplicationContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T15:52:49.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Presenter.cs",
               "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Manager\\Presenter.cs",
               "RelativeDocumentMoniker": "Manager\\Presenter.cs",
               "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Manager\\Presenter.cs",
               "RelativeToolTip": "Manager\\Presenter.cs",
-              "ViewState": "AQIAAIkAAAAAAAAAAADgv5AAAABMAAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAASwKMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T15:39:43.567Z",
+              "WhenOpened": "2024-08-10T13:49:08.67Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Converter",
-              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Converter.csproj",
-              "RelativeDocumentMoniker": "Converter\\Converter.csproj",
-              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Converter.csproj",
-              "RelativeToolTip": "Converter\\Converter.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-09T15:21:10.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form1.cs",
-              "RelativeDocumentMoniker": "Converter\\Form1.cs",
-              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form1.cs*",
-              "RelativeToolTip": "Converter\\Form1.cs*",
-              "ViewState": "AQIAACsAAAAAAAAAAAAuwDYAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T15:20:18.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form1.cs",
-              "RelativeDocumentMoniker": "Converter\\Form1.cs",
-              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form1.cs [Design]*",
-              "RelativeToolTip": "Converter\\Form1.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T15:20:15.639Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Model.cs",
-              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Manager\\Model.cs",
-              "RelativeDocumentMoniker": "Manager\\Model.cs",
-              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Manager\\Model.cs",
-              "RelativeToolTip": "Manager\\Model.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJkAAAAsAAAA",
+              "Title": "IView.cs",
+              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Manager\\IView.cs",
+              "RelativeDocumentMoniker": "Manager\\IView.cs",
+              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Manager\\IView.cs",
+              "RelativeToolTip": "Manager\\IView.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAlwBMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T11:41:04.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T13:48:49.002Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Program.cs",
-              "RelativeDocumentMoniker": "Converter\\Program.cs",
-              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Program.cs",
-              "RelativeToolTip": "Converter\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Title": "Form3.cs",
+              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form3.cs",
+              "RelativeDocumentMoniker": "Converter\\Form3.cs",
+              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form3.cs",
+              "RelativeToolTip": "Converter\\Form3.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T07:17:39.193Z",
+              "WhenOpened": "2024-08-10T12:45:57.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form1.cs",
+              "RelativeDocumentMoniker": "Converter\\Form1.cs",
+              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form1.cs",
+              "RelativeToolTip": "Converter\\Form1.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAArwDoAAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:01:37.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Converter.csproj",
-              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Converter.csproj",
-              "RelativeDocumentMoniker": "Converter\\Converter.csproj",
-              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Converter.csproj",
-              "RelativeToolTip": "Converter\\Converter.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-09T15:23:12.331Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Program.cs",
+              "RelativeDocumentMoniker": "Converter\\Program.cs",
+              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Program.cs",
+              "RelativeToolTip": "Converter\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:25:02.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form2.cs",
+              "RelativeDocumentMoniker": "Converter\\Form2.cs",
+              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Converter\\Form2.cs",
+              "RelativeToolTip": "Converter\\Form2.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADgvyIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:08:21.233Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\DataBase1\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "DataBase1\\ApplicationContext.cs",
+              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\DataBase1\\ApplicationContext.cs",
+              "RelativeToolTip": "DataBase1\\ApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:06:32.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "G:\\Development\\C#\\Converter\\ConverterApp-master\\DataBase1\\User.cs",
+              "RelativeDocumentMoniker": "DataBase1\\User.cs",
+              "ToolTip": "G:\\Development\\C#\\Converter\\ConverterApp-master\\DataBase1\\User.cs",
+              "RelativeToolTip": "DataBase1\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T15:52:58.501Z"
             }
           ]
         }

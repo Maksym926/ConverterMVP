@@ -16,9 +16,9 @@ namespace Converter
 
             ApplicationConfiguration.Initialize();
             Model model = new Model();
-            Form1 winForm = new Form1();
+            Form2 winForm = new Form2();
             
-            Presenter presenter = new Presenter(model, winForm);
+            
             Application.Run(winForm);
         }
     }

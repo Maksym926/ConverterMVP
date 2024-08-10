@@ -19,7 +19,7 @@ namespace Converter
 
             
         }
-        
+        public string result = "";
 
         public string Item1 { get => Input.Text; }
         public string Item2 { get => OutPut.Text; }
@@ -45,17 +45,21 @@ namespace Converter
         {
 
             resultLable.Text = res;
+
+            result = resultLable.Text;
         }
 
         public void AddUserInfo(string result)
         {
-           
+
+
             using (DataBase1.ApplicationContext db = new DataBase1.ApplicationContext())
-            { 
-                User one = new User { output = "Hello"};
+            {
+
+                User one = new User { output = result, UserName = Form2.instanse.tb1.Text.ToString(), Password = Form2.instanse.tb2.Text.ToString()};
                 db.Users.Add(one);
                 db.SaveChanges();
-                
+
             }
         }
     }
