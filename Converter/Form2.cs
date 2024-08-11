@@ -35,6 +35,7 @@ namespace Converter
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            bool IsFound = false;
             tb1 = UserNameTextBox;
             tb2 = PasswordtextBox;
             errorProviderUserName.Clear();
@@ -61,6 +62,7 @@ namespace Converter
                     if (IsCorrect) {
                         if (UserNameTextBox.Text == u.UserName && PasswordtextBox.Text == decriptedStr)
                         {
+                            IsFound = true;
                             Form1 winForm = new Form1();
                             Model model = new Model();
                             Presenter presenter = new Presenter(model, winForm);
@@ -69,18 +71,12 @@ namespace Converter
                             winForm.Show();
                             break;
                         }
-                        /*else
-                        {
-                            MessageBox.Show("Pasword or User Name you have wtitten is incorect");
-                            break;
-
-                        }*/
-                    }
-
-
-                    
-
-                    }
+                        
+                    }                  
+                }
+                if (!IsFound) {
+                    MessageBox.Show("Login or password is incorect");
+                }
 
             }
         }
