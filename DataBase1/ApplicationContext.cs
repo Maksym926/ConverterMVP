@@ -15,7 +15,7 @@ namespace DataBase1
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=helloapp1.db");
+            optionsBuilder.UseSqlite("Data Source=helloapp2.db");
         }
     }
 }

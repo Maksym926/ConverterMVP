@@ -9,12 +9,17 @@
 
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             loginButton = new Button();
             UserNameTextBox = new TextBox();
             PasswordtextBox = new TextBox();
             label1 = new Label();
             label2 = new Label();
             RegButton = new Button();
+            errorProviderUserName = new ErrorProvider(components);
+            errorProviderPassword = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProviderUserName).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProviderPassword).BeginInit();
             SuspendLayout();
             // 
             // loginButton
@@ -69,6 +74,14 @@
             RegButton.UseVisualStyleBackColor = true;
             RegButton.Click += RegButton_Click;
             // 
+            // errorProviderUserName
+            // 
+            errorProviderUserName.ContainerControl = this;
+            // 
+            // errorProviderPassword
+            // 
+            errorProviderPassword.ContainerControl = this;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -83,6 +96,8 @@
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;
+            ((System.ComponentModel.ISupportInitialize)errorProviderUserName).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProviderPassword).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -95,5 +110,8 @@
         private Label label1;
         private Label label2;
         private Button RegButton;
+        private System.ComponentModel.IContainer components;
+        private ErrorProvider errorProviderUserName;
+        private ErrorProvider errorProviderPassword;
     }
 }

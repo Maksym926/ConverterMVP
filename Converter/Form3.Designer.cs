@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             RegisterNameTextBox = new TextBox();
             RegisterPasswordTextBox = new TextBox();
             RegisterButton = new Button();
             label1 = new Label();
             label2 = new Label();
+            errorProviderName = new ErrorProvider(components);
+            errorProviderPassword = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProviderName).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProviderPassword).BeginInit();
             SuspendLayout();
             // 
             // RegisterNameTextBox
@@ -77,6 +82,14 @@
             label2.TabIndex = 3;
             label2.Text = "Password";
             // 
+            // errorProviderName
+            // 
+            errorProviderName.ContainerControl = this;
+            // 
+            // errorProviderPassword
+            // 
+            errorProviderPassword.ContainerControl = this;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -89,6 +102,8 @@
             Controls.Add(RegisterNameTextBox);
             Name = "Form3";
             Text = "Form3";
+            ((System.ComponentModel.ISupportInitialize)errorProviderName).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProviderPassword).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -100,5 +115,7 @@
         private Button RegisterButton;
         private Label label1;
         private Label label2;
+        private ErrorProvider errorProviderName;
+        private ErrorProvider errorProviderPassword;
     }
 }
