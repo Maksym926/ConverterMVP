@@ -23,6 +23,7 @@ namespace Converter
             InitializeComponent();
             instanse = this;
             PasswordtextBox.PasswordChar = '*';
+            
         }
        
         private void Form2_Load(object sender, EventArgs e)

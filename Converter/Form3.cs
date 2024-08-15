@@ -15,11 +15,13 @@ namespace Converter
 {
     public partial class Form3 : Form
     {
-        
+
         public Form3()
         {
             InitializeComponent();
-            
+            RegisterPasswordTextBox.PasswordChar = '*';
+            ConfirmPasswordTextBox.PasswordChar = '*';
+
         }
 
 
@@ -52,21 +54,26 @@ namespace Converter
                     errorProviderPassword.SetError(RegisterPasswordTextBox, "Required");
                     IsCorrect = false;
                 }
-                
-                
+                if (RegisterPasswordTextBox.Text != ConfirmPasswordTextBox.Text)
+                {
+                    errorProviderName.SetError(ConfirmPasswordTextBox, "Passwards do not match");
+                    MessageBox.Show("Passwards do not match");
+                    IsCorrect = false;
+                }
+
 
                 if (IsCorrect)
                 {
-                    
-                        User user = new User { UserName = RegisterNameTextBox.Text, Password = EncryptString(ToSecureString(RegisterPasswordTextBox.Text)), output = "" };
 
-                        db.Users.Add(user);
-                        db.SaveChanges();
-                        Form2 form2 = new Form2();
-                        this.Hide();
-                        form2.Show();
+                    User user = new User { UserName = RegisterNameTextBox.Text, Password = EncryptString(ToSecureString(RegisterPasswordTextBox.Text)), output = "" };
 
-            
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                    Form2 form2 = new Form2();
+                    this.Hide();
+                    form2.Show();
+
+
                 }
 
             }
@@ -103,5 +110,45 @@ namespace Converter
             return returnValue;
         }
         #endregion
+
+
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void ShowPasswordcheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ShowPasswordcheckBox2.Checked)
+            {
+                ConfirmPasswordTextBox.PasswordChar = '\0';
+            }
+            else
+            {
+                ConfirmPasswordTextBox.PasswordChar = '*';
+            }
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                RegisterPasswordTextBox.PasswordChar = '\0';
+            }
+            else
+            {
+                RegisterPasswordTextBox.PasswordChar = '*';
+            }
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            this.Hide();
+            form2.Show();
+        }
     }
 }
