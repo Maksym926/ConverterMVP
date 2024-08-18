@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataBase1;
+using Microsoft.Data.SqlClient;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Converter
 {
@@ -27,56 +29,75 @@ namespace Converter
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
-            using (DataBase1.ApplicationContext db = new DataBase1.ApplicationContext())
+            string connectionString = "Server=WIN-S3MBIL1NUK7\\sqlexpress;Database=User;User ID=sa;Password=Maxakin_max; Encrypt=false;";
+            SqlConnection conn = new SqlConnection(connectionString);
+
+            errorProviderName.Clear();
+            errorProviderPassword.Clear();
+            bool IsCorrect = true;
+
+            conn.Open();
+            string sqlExpression1 = "Select Name From UserInfo ";
+            SqlCommand cmd = new SqlCommand(sqlExpression1, conn);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
             {
-
-                errorProviderName.Clear();
-                errorProviderPassword.Clear();
-                bool IsCorrect = true;
-                var users = db.Users.ToList();
-                foreach (User u in users)
+                
+                if (RegisterNameTextBox.Text == reader["Name"].ToString())
                 {
-                    if (RegisterNameTextBox.Text == u.UserName)
-                    {
-                        errorProviderName.SetError(RegisterNameTextBox, "Existing login");
-                        MessageBox.Show("This login is already exists");
-                        IsCorrect = false;
-                        break;
-                    }
-                }
-                if (string.IsNullOrEmpty(RegisterNameTextBox.Text))
-                {
-                    errorProviderName.SetError(RegisterNameTextBox, "Required");
+                    errorProviderName.SetError(RegisterNameTextBox, "Existing login");
+                    MessageBox.Show("This login is already exists");
                     IsCorrect = false;
+                    
+                    break;
                 }
-                if (string.IsNullOrEmpty(RegisterPasswordTextBox.Text))
-                {
-                    errorProviderPassword.SetError(RegisterPasswordTextBox, "Required");
-                    IsCorrect = false;
-                }
-                if (RegisterPasswordTextBox.Text != ConfirmPasswordTextBox.Text)
-                {
-                    errorProviderName.SetError(ConfirmPasswordTextBox, "Passwards do not match");
-                    MessageBox.Show("Passwards do not match");
-                    IsCorrect = false;
-                }
+            }
+            conn.Close();
+
+            if (string.IsNullOrEmpty(RegisterNameTextBox.Text))
+            {
+                errorProviderName.SetError(RegisterNameTextBox, "Required");
+                IsCorrect = false;
+            }
+            if (string.IsNullOrEmpty(RegisterPasswordTextBox.Text))
+            {
+                errorProviderPassword.SetError(RegisterPasswordTextBox, "Required");
+                IsCorrect = false;
+            }
+            if (RegisterPasswordTextBox.Text != ConfirmPasswordTextBox.Text)
+            {
+                errorProviderName.SetError(ConfirmPasswordTextBox, "Passwards do not match");
+                MessageBox.Show("Passwards do not match");
+                IsCorrect = false;
+            }
 
 
-                if (IsCorrect)
-                {
-
-                    User user = new User { UserName = RegisterNameTextBox.Text, Password = EncryptString(ToSecureString(RegisterPasswordTextBox.Text)), output = "" };
-
-                    db.Users.Add(user);
-                    db.SaveChanges();
-                    Form2 form2 = new Form2();
-                    this.Hide();
-                    form2.Show();
+            if (IsCorrect)
+            {
+                string regName = RegisterNameTextBox.Text;
+                string encriptedPass = EncryptString(ToSecureString(RegisterPasswordTextBox.Text));
 
 
-                }
+                conn.Open();
+                /*string sqlExpression = $"INSERT INTO UserInfo (Name, Password, Output) VALUES ('{RegisterNameTextBox.Text}', '{EncryptString(ToSecureString(RegisterPasswordTextBox.Text))}', '')";*/
+                string sqlExpression = $"INSERT INTO UserInfo (Name, Password, Output) VALUES (@Name, '{encriptedPass}', '')";
+                SqlCommand command = new SqlCommand(sqlExpression, conn);
+                command.Parameters.AddWithValue("@Name", regName);
+                /*command.Parameters.AddWithValue("@Password", encriptedPass);*/
+
+                command.ExecuteNonQuery();
+
+                conn.Close();
+                Form2 form2 = new Form2();
+                this.Hide();
+                form2.Show();
+
 
             }
+
+            
         }
         #region Encrypte password
         static byte[] entropy = Encoding.Unicode.GetBytes("SaLtY bOy 6970 ePiC");

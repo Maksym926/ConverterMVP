@@ -17,6 +17,6 @@ namespace Manager
 
         public void SetPresenter(Presenter presenter);
 
-        public void AddUserInfo(string result);
+        
     }
 }

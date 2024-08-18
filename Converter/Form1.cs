@@ -1,16 +1,24 @@
-﻿using DataBase1;   
+﻿/*using DataBase1;*/   
 using Manager;
 using Microsoft.VisualBasic.Logging;
 using System.Net.Security;
 using System.Security.Cryptography;
 using System.Security;
 using System.Text;
+using myDB;
+using System.Data;
+using Microsoft.Data.SqlClient;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
+
 
 namespace Converter
 {
     public partial class Form1 : Form, IView
     {
-        public Form1()
+        
+
+    public Form1()
         {
             InitializeComponent();
         }
@@ -42,6 +50,7 @@ namespace Converter
             presenter.Calculate(Item1, Item2, num);
 
 
+
         }
 
         public void GetResult(string res)
@@ -50,20 +59,43 @@ namespace Converter
             resultLable.Text = res;
 
             result = resultLable.Text;
+            AddUserInfo(res);
         }
 
-        public void AddUserInfo(string result)
+        static async Task AddUserInfo(string result)
         {
+            /* con.Open();
+             cmd = new */
+            /*DataAccess db = new DataAccess();*/
+            /*db.GetUsers(Form2.instanse.tb1.Text.ToString(), EncryptString(ToSecureString(Form2.instanse.tb2.Text.ToString())), result);*/
+            /*db.AddUsers("Max", "1234", result);*/
 
-
-            using (DataBase1.ApplicationContext db = new DataBase1.ApplicationContext())
+            /*using (DataBase1.ApplicationContext db = new DataBase1.ApplicationContext())
             {
 
-                User one = new User { output = result, UserName = Form2.instanse.tb1.Text.ToString(), Password = EncryptString(ToSecureString(Form2.instanse.tb2.Text.ToString()))};
+                User one = new User { Output = result, Name = Form2.instanse.tb1.Text.ToString(), Password = EncryptString(ToSecureString(Form2.instanse.tb2.Text.ToString()))};
                 db.Users.Add(one);
                 db.SaveChanges();
 
+            }*/
+            string connectionString = "Server=WIN-S3MBIL1NUK7\\sqlexpress;Database=User;User ID=sa;Password=Maxakin_max; Encrypt=false;";
+            string sqlExpression = $"INSERT INTO UserInfo (Name, Password, Output) VALUES ('{Form2.instanse.tb1.Text.ToString()}', '{EncryptString(ToSecureString(Form2.instanse.tb2.Text.ToString()))}', '{result}')";
+
+            /*string sqlExpression = "DELETE FROM UserInfo ";*/
+
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+
+                SqlCommand command = new SqlCommand(sqlExpression, connection);
+
+                int number = await command.ExecuteNonQueryAsync();
+                Console.WriteLine($"Добавлено объектов: {number}");
             }
+            
+
+            MessageBox.Show("Inserted");
         }
         #region Encrypte password
         static byte[] entropy = Encoding.Unicode.GetBytes("SaLtY bOy 6970 ePiC");

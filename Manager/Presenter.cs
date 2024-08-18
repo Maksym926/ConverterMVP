@@ -105,7 +105,7 @@ namespace Manager
             {
                 
                 int numInt = Convert.ToInt32(number);
-                string res = "";
+                
                 if (numInt > 0)
                 {
                     model.DecimalToBinary1 = number;
@@ -161,7 +161,7 @@ namespace Manager
 
 
             view.GetResult(result);
-            view.AddUserInfo(result);
+            
         }
     }
 }

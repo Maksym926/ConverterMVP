@@ -34,6 +34,9 @@
               },
               "G:\\Development\\C#\\Converter\\ConverterApp-master\\Manager\\Manager.csproj": {
                 "projectPath": "G:\\Development\\C#\\Converter\\ConverterApp-master\\Manager\\Manager.csproj"
+              },
+              "G:\\Development\\C#\\Converter\\ConverterApp-master\\myDB\\myDB.csproj": {
+                "projectPath": "G:\\Development\\C#\\Converter\\ConverterApp-master\\myDB\\myDB.csproj"
               }
             }
           }
@@ -52,6 +55,16 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "System.Data.Common": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -201,6 +214,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "G:\\Development\\C#\\Converter\\ConverterApp-master\\myDB\\myDB.csproj": {
+      "restore": {
+        "projectUniqueName": "G:\\Development\\C#\\Converter\\ConverterApp-master\\myDB\\myDB.csproj",
+        "projectName": "myDB",
+        "projectPath": "G:\\Development\\C#\\Converter\\ConverterApp-master\\myDB\\myDB.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
       }
     }
   }

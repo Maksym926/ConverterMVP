@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataBase1;
 using Manager;
+using Microsoft.Data.SqlClient;
 
 namespace Converter
 {
@@ -36,13 +37,13 @@ namespace Converter
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            bool IsFound = false;
+           /* bool IsFound = false;
             tb1 = UserNameTextBox;
             tb2 = PasswordtextBox;
             errorProviderUserName.Clear();
-            errorProviderPassword.Clear();
+            errorProviderPassword.Clear();*/
 
-            User user = new User();
+            /*User user = new User();
             using (DataBase1.ApplicationContext db = new DataBase1.ApplicationContext())
             {
                 
@@ -61,7 +62,7 @@ namespace Converter
 
                     string decriptedStr = ToInsecureString(DecryptString(u.Password));
                     if (IsCorrect) {
-                        if (UserNameTextBox.Text == u.UserName && PasswordtextBox.Text == decriptedStr)
+                        if (UserNameTextBox.Text == u.Name && PasswordtextBox.Text == decriptedStr)
                         {
                             IsFound = true;
                             Form1 winForm = new Form1();
@@ -79,7 +80,56 @@ namespace Converter
                     MessageBox.Show("Login or password is incorect");
                 }
 
+
+            }*/
+            string connectionString = "Server=WIN-S3MBIL1NUK7\\sqlexpress;Database=User;User ID=sa;Password=Maxakin_max; Encrypt=false;";
+            SqlConnection conn = new SqlConnection(connectionString);
+
+            conn.Open();
+            string sqlExpression = "Select Name, Password From UserInfo ";
+            SqlCommand cmd  = new SqlCommand(sqlExpression, conn);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            bool IsFound = false;
+            bool IsCorrect = true;
+            tb1 = UserNameTextBox;
+            tb2 = PasswordtextBox;
+            errorProviderUserName.Clear();
+            errorProviderPassword.Clear();
+            while (reader.Read()) {
+                if (string.IsNullOrEmpty(UserNameTextBox.Text))
+                {
+                    errorProviderUserName.SetError(UserNameTextBox, "Required");
+                    IsCorrect = false;
+                }
+                if (string.IsNullOrEmpty(PasswordtextBox.Text))
+                {
+                    errorProviderPassword.SetError(PasswordtextBox, "Required");
+                    IsCorrect = false;
+                }
+
+                /*string decriptedStr = ToInsecureString(DecryptString(reader["Password"].ToString()));*/
+                if (IsCorrect)
+                {
+                    if (UserNameTextBox.Text == reader["Name"].ToString() && PasswordtextBox.Text == ToInsecureString(DecryptString(reader["Password"].ToString())))
+                    {
+                        IsFound = true;
+                        Form1 winForm = new Form1();
+                        Model model = new Model();
+                        Presenter presenter = new Presenter(model, winForm);
+                        this.Hide();
+
+                        winForm.Show();
+                        break;
+                    }
+
+                }
             }
+            if (!IsFound)
+            {
+                MessageBox.Show("Login or password is incorect");
+            }
+
         }
         
 

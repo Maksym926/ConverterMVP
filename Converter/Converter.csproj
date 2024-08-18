@@ -9,8 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DataBase1\DataBase1.csproj" />
     <ProjectReference Include="..\Manager\Manager.csproj" />
+    <ProjectReference Include="..\myDB\myDB.csproj" />
   </ItemGroup>
 
   <ItemGroup>

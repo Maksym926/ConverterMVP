@@ -8,11 +8,11 @@ namespace DataBase1
 {
     public class User
     {
-        public int Id { get; set; }
+        public int id { get; set; }
 
-        public string UserName { get; set; }
+        public string Name { get; set; }
         public string Password { get; set; }
 
-        public string output { get; set; }
+        public string Output { get; set; }
     }
 }
